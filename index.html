@@ -125,7 +125,8 @@
                     <div class="image"></div>
                     <div class="info">
                         <div>
-                          <h1>Escuela de Ingeniería de Sistemas y <br>Computación<br> <br> <p>{Hola Mundo! Aquí estoy}</p></h1>
+                          <!-- <h1>Escuela de Ingeniería de Sistemas y <br>Computación<br> <br> <p>{Hola Mundo! Aquí estoy}</p></h1> -->
+                          <h1>Escuela de Ingeniería de Sistemas y <br>Computación</h1>
                           <p>Acompáñanos en el proceso de elaboración de nuestra alfombra.</p>
                           <div class="white-button button">
                               <a href="#projects">Muéstrame</a>
@@ -201,12 +202,14 @@
                             <img src="img/test.jpeg" alt="Imagen 2">
                             <div class="carousel-caption">
                               <h3>Slide 2</h3>
+                              <p>Descripción del slide 2</p>
                             </div>
                           </div>
                           <div class="item">
                             <img src="img/test.jpeg" alt="Imagen 3">
                             <div class="carousel-caption">
                               <h3>Slide 3</h3>
+                              <p>Descripción del slide 3</p>
                             </div>
                           </div>
                         </div>
@@ -387,15 +390,15 @@
             
             // If they scrolled down and are past the navbar, add class .nav-up.
             // This is necessary so you never see what is "behind" the navbar.
-            if (st > lastScrollTop && st > navbarHeight){
-                // Scroll Down
-                $('header').removeClass('nav-down').addClass('nav-up');
-            } else {
-                // Scroll Up
-                if(st + $(window).height() < $(document).height()) {
-                    $('header').removeClass('nav-up').addClass('nav-down');
-                }
-            }
+            // if (st > lastScrollTop && st > navbarHeight){
+            //     // Scroll Down
+            //     $('header').removeClass('nav-down').addClass('nav-up');
+            // } else {
+            //     // Scroll Up
+            //     if(st + $(window).height() < $(document).height()) {
+            //         $('header').removeClass('nav-up').addClass('nav-down');
+            //     }
+            // }
             
             lastScrollTop = st;
         }
