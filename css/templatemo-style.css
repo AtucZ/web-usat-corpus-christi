@@ -537,6 +537,7 @@ header {
 #featured .item .image img {
   width: 100%;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 #featured .item .image .featured-button a {
